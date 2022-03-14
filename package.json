@@ -3,7 +3,25 @@
   "version": "1.0.0",
   "description": "Using speedometer and playwright as a benchmark just for fun",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "bash menu.sh",
+    "all-easy": "npx playwright test --workers=3 --headed | gnomon",
+    "all-medium": "npx playwright test --repeat-each 8 --workers=8 --headed | gnomon",
+    "all-hard": "npx playwright test --repeat-each 30 --workers=30 --headed | gnomon",
+    "all-extreme": "npx playwright test --repeat-each 1800 --workers=600 --headed | gnomon",
+    "chromium-easy": "npx playwright test --repeat-each 3 --workers=3 --project=chromium --headed | gnomon",
+    "chromium-medium": "npx playwright test --repeat-each 24 --workers=8 --project=chromium --headed | gnomon",
+    "chromium-hard": "npx playwright test --repeat-each 90 --workers=30 --project=chromium --headed | gnomon",
+    "chromium-extreme": "npx playwright test --repeat-each 600 --workers=600 --project=chromium --headed | gnomon",
+    "firefox-easy": "npx playwright test --repeat-each 3 --workers=3 --project=firefox --headed | gnomon",
+    "firefox-medium": "npx playwright test --repeat-each 24 --workers=8 --project=firefox --headed | gnomon",
+    "firefox-hard": "npx playwright test --repeat-each 90 --workers=30 --project=firefox --headed | gnomon",
+    "firefox-extreme": "npx playwright test --repeat-each 600 --workers=600 --project=firefox --headed | gnomon",
+    "webkit-easy": "npx playwright test --repeat-each 3 --workers=3 --project=webkit --headed | gnomon",
+    "webkit-medium": "npx playwright test --repeat-each 24 --workers=8 --project=webkit --headed | gnomon",
+    "webkit-hard": "npx playwright test --repeat-each 90 --workers=30 --project=webkit --headed | gnomon",
+    "webkit-extreme": "npx playwright test --repeat-each 600 --workers=600 --project=webkit --headed | gnomon"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Duckiduc/playwright-benchmark.git"
