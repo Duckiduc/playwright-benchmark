@@ -1,0 +1,21 @@
+{
+  "name": "playwright-benchmark",
+  "version": "1.0.0",
+  "description": "Using speedometer and playwright as a benchmark just for fun",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Duckiduc/playwright-benchmark.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Duckiduc/playwright-benchmark/issues"
+  },
+  "homepage": "https://github.com/Duckiduc/playwright-benchmark#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.19.2"
+  }
+}
