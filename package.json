@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/Duckiduc/playwright-benchmark#readme",
   "devDependencies": {
-    "@playwright/test": "^1.41.0",
+    "@playwright/test": "^1.41.1",
     "gnomon": "^1.4.6"
   }
 }
